@@ -108,15 +108,17 @@ function exportCsv(url, headers, j, callback) {
 }
 
 function saveFile(body, callback) {
-    let filePath = process.cwd() + '/export';
+    let dir = process.cwd() + '/export';
 
-    if (!fs.existsSync(filePath)) {
-        fs.mkdirSync(filePath);
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
     }
 
-    let fileName = filePath + '/zen_' + moment().format('YYYY-MM-DD-HHmmss') + '.csv';
+    let fileName = 'zen_' + moment().format('YYYY-MM-DD-HHmmss') + '.csv';
 
-    fs.writeFileSync(fileName, body);
+    let filePath = dir + '/' + fileName;
+
+    fs.writeFileSync(filePath, body);
 
     console.log(fileName + ' saved!');
 
