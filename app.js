@@ -114,7 +114,7 @@ function saveFile(body, callback) {
         fs.mkdirSync(filePath);
     }
 
-    let fileName = filePath + '/' + moment().format('YYYY-MM-DD-HHmmss') + '.csv';
+    let fileName = filePath + '/zen_' + moment().format('YYYY-MM-DD-HHmmss') + '.csv';
 
     fs.writeFileSync(fileName, body);
 
