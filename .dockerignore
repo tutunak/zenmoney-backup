@@ -1,0 +1,12 @@
+.vscode
+.git
+node_modules
+.dockerignore
+.eslintrc.json
+.gitignore
+*.sh
+Dockerfile
+README.md
+yarn-error.log
+export
+LICENSE

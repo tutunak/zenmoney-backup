@@ -1,0 +1,12 @@
+{
+  "name": "zenmoney-backup",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:tagplus5/zenmoney-backup.git",
+  "author": "tagplus5 <tagplus5@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.21.0",
+    "request": "^2.83.0"
+  }
+}
