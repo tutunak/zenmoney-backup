@@ -6,7 +6,7 @@
   "author": "tagplus5 <tagplus5@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.21.0",
-    "request": "^2.83.0"
+    "moment": "^2.24.0",
+    "request": "^2.88.0"
   }
 }
