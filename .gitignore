@@ -1,5 +1,4 @@
 .vscode
 export
 node_modules
-.eslintrc.json
 yarn-error.log
