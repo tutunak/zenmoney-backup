@@ -1,11 +1,12 @@
-.vscode
 .git
+.vscode
+export
 node_modules
 .dockerignore
 .gitignore
 *.sh
 Dockerfile
+LICENSE
 README.md
 yarn-error.log
-export
-LICENSE
+zenmoney*
