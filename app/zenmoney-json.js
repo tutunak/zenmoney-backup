@@ -76,7 +76,7 @@ async function getCode(cookies) {
 
         await request(options);
 
-        throw error.getWithCallee(new Error('getCode redirect error'), arguments.callee.name, __filename);
+        throw error.getWithCallee(new Error('getCode > redirect error'), arguments.callee.name, __filename);
 
     } catch (err) {
         if (err.statusCode == 302) {
@@ -90,7 +90,7 @@ async function getCode(cookies) {
             }
 
             if (code == '') {
-                throw error.getWithCallee(new Error('getCode code not found'), arguments.callee.name, __filename);
+                throw error.getWithCallee(new Error('getCode > code not found'), arguments.callee.name, __filename);
             }
 
             return code;
