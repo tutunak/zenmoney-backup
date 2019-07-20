@@ -14,7 +14,7 @@ async function start() {
         save('csv', csv);
 
     } catch (err) {
-        console.error(err);
+        console.error(err); // eslint-disable-line no-console
     }
 }
 
@@ -37,5 +37,5 @@ function save(ext, body) {
 
     fs.writeFileSync(filePath, body);
 
-    console.log(fileName + ' saved!');
+    console.log(fileName + ' saved!'); // eslint-disable-line no-console
 }
