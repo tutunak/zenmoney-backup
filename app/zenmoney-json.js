@@ -76,7 +76,7 @@ async function getCode(cookies) {
 
         await request(options);
 
-        throw error.getWithCallee(new Error('getCodeUserId redirect error'), arguments.callee.name, __filename);
+        throw error.getWithCallee(new Error('getCode redirect error'), arguments.callee.name, __filename);
 
     } catch (err) {
         if (err.statusCode == 302) {
