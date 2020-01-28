@@ -7,5 +7,5 @@ cd $FULLPATH
 docker run --rm \
 -v /etc/localtime:/etc/localtime:ro \
 -v /home/backup/zenmoney:/app/export \
--v $FULLPATH/zenmoney.json:/app/zenmoney.json \
-tagplus5/zenmoney-backup
+-v /tmp/zenmoney.json:/app/zenmoney.json \
+zenmoney-backup:0.0.1
