@@ -2,17 +2,10 @@ const fs = require('fs');
 const moment = require('moment');
 const zenmoneyJson = require('./app/zenmoney-json');
 const zenmoneyCsv = require('./app/zenmoney-csv');
-const schedule = require('node-schedule')
-
 
 start();
-async function start(){
-    schedule.scheduleJob('* * * * *', async () => {
-        main()
-    })
-}
 
-async function main(){
+async function start() {
     try {
         const json = await zenmoneyJson.get();
         save('json', JSON.stringify(json, null, ' '));
